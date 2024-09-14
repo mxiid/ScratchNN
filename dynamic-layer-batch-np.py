@@ -18,6 +18,14 @@ weights = [
 
 biases = [2, 3, 0.5]
 
+weights2 = [[3.1, 2.1, 8.7, 1.0], [0.5, -0.91, 0.2, -0.5], [-0.26, -2.1, 0.17, 0.87]]
+
+biases2 = [2, 3, 0.5]
+
+weights3 = [[3.1, 2.1, 8.7, 1.0], [0.5, -0.91, 0.2, -0.5], [-0.26, -2.1, 0.17, 0.87]]
+
+biases3 = [2, 3, 0.5]
+
 output = (
     np.dot(inputs, np.array(weights).T) + biases
 )  # *transposing since `inputs` is `shape(3, 4)` and `weights` is `shape(3,4)` as well and when we transpose `weights`, it becomes `shape(4, 3)` hence the columns of `inputs` match the rows of `weights` and a dot product is computed.
